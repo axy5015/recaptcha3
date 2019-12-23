@@ -1,0 +1,24 @@
+﻿6LeW5ccUAAAAAGlVr61TGqzBJL0KtuELggPpAdLz
+
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<div class="g-recaptcha" data-sitekey="6Lc8isEUAAAAAJuCVaft-xEBcXl2lHOExPmiD2br"></div>
+
+
+<script src="https://www.google.com/recaptcha/api.js?hl=zh-TW"></script>
+	
+						
+		
+		<div id="recaptcha">
+			<div class="g-recaptcha" data-sitekey="6Lc8isEUAAAAAJuCVaft-xEBcXl2lHOExPmiD2br" data-callback="restoreCss"></div>
+			<input type="hidden" class="hiddenRecaptcha" name="hiddenRecaptcha" id="hiddenRecaptcha">
+			
+			<script> 
+				$(window).on('load', function() {
+					var gRecaptchaIframe = $('iframe[role^=presentation]');	
+					var domainRegex = /(google|recaptcha)/igm;
+					if(typeof gRecaptchaIframe !== "undefined" && gRecaptchaIframe.attr('src').match(domainRegex) && typeof gRecaptchaIframe.attr('title') === "undefined"){
+						gRecaptchaIframe.attr('title','google recaptcha');
+					}
+						
+				});
+			</script>
